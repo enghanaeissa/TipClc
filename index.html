@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf.8">
+            <title>Tip Calculator</title>
+            <link rel="stylesheet" href="syle.css"/>
+        </head>
+        <body>
+            <!--the container div-->
+            <div id = "container">
+                <!--Title-->
+                <h1>Tip Calculator</h1>
+                <!--the calc content div-->
+                <div id = "calc-content">
+                    <!--form-->
+                    <form id= "form">
+                        <!--the amount input-->
+                        <p>How much was your bill? </p>
+                        $<input type="text" id= "bill" placeholder="the bill amount">
+
+                        <!--choises for asking about the quality-->
+                        <p>How was your serves?</p>
+                        <select id = "quality">
+                            <option value=".3">30% -Outstanding</option>
+                            <option value=".2">20% -Good</option>
+                            <option value=".15">15% -OK</option>
+                            <option value=".1">10% -Bad</option>
+                            <option value=".05">5% -Terrible</option>
+                        </select>
+                        <!--field 1 to know the numb of people-->
+                        <p>How many people are sharing the bill?</p>
+                        <input id = "peopleNumb" type="text" placeholder="please enter the numb of people"> people
+                    <button type="submit" id="calcBtn">Calculate</button>
+                    <button type="button" id="resetBtn">reset</button>
+                </div>
+                <!--total tip-->
+                <div id="totalTip">
+                    <sup>$</sup> <span id="result">0.00</span>
+                    <small id="each">each</small>
+                </div>
+            </div>
+
+                  </form>
+
+            <!--end work area-->
+            <script src="main.js"></script>
+        </body>
+    </html>
